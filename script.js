@@ -1,4 +1,14 @@
-// script.js
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    const mainContent = document.getElementById("main-content");
+  
+    setTimeout(() => {
+      preloader.style.display = "none"; 
+      mainContent.style.display = "block"; 
+      document.body.style.overflow = "auto"; 
+    }, 3500); 
+  });
+
 const cart = [];
 const products = [
   { id: 1, name: "Classic Lemonade", price: 3.0 },

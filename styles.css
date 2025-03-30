@@ -5,8 +5,36 @@ body {
     padding: 0;
     background-color: #fffbea;
     color: #333;
+    
+  }
+
+  /* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7e7a9; /* Lemonade yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
   }
   
+  .quote-container, .quote {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 2s;
+  }
+  
+  .quote {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+    opacity: 0;
+  }
+  
+
   header {
     background-color: #f7e7a9;
     text-align: center;
@@ -17,10 +45,22 @@ body {
     margin: 0;
     font-size: 2.5em;
   }
+
+  .title{
+    font-size: 2em;
+  }
   
   nav {
     background-color: #f4d03f;
     padding: 10px;
+  }
+
+  .nav-item{
+    font-size: 1.5em;
+  }
+
+  .nav-item:hover{
+    text: #f4d03f;
   }
   
   nav ul {
@@ -38,6 +78,12 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+  }
+
+  .Lemonsine{ 
+    width: 700px;
+    height: 350px;
+    justify-content: center;
   }
   
   section {
@@ -79,11 +125,38 @@ body {
     background-color: #f7e7a9;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
   }
 
   .productBtn{
-    size: 50px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .productBtn:visited {
+    text-decoration: none;
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
