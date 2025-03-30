@@ -46,8 +46,7 @@ To set up Laymoona locally, follow these steps:
 
 For any questions or issues, feel free to reach out:
 
-- **Email**: support@lemonadeshop.com
-- **Phone**: (123) 456-7890
+- **Email**: zakbond05@gmail.com
 
 ---
 
